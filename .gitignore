@@ -1,0 +1,6 @@
+*.bat
+*.exe
+*.o
+*.docx
+.vscode/
+Makefile
