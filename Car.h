@@ -8,13 +8,19 @@
 using namespace std;
 
 class Car{
-private:
-	//тип летательного устройства
+	private:
 	string carType;
-	//хранилище информации об устройстве
+	//info about car
 	map<string, string> parts;
-public:
 
-};
+	public:
+	Car(string type);
+	virtual ~Car();
+
+	string getPart(string key);
+	void setPart(string key, string value);
+	bool isPartExist(string key);
+	void show();
+}; 
 
 #endif //CAR
