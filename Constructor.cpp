@@ -4,7 +4,7 @@
 #include "include/Constructor.h"
 using namespace std;
 
-void Constructor::Construct(CarBuilder* carBuilder){
+void Constructor::construct(CarBuilder* carBuilder){
     string mode;
     cout << "Enter color" << endl;
     cin >> mode;

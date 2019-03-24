@@ -1,4 +1,5 @@
 *.bat
+*.txt
 *.exe
 *.o
 *.docx

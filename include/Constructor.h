@@ -15,7 +15,7 @@ class Constructor
     Constructor(){};
     virtual ~Constructor(){};
 
-    void Construct(CarBuilder* carBuilder);
+    void construct(CarBuilder* carBuilder);
 };
 
 #endif //CONSTRUCTOR

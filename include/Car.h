@@ -3,6 +3,7 @@
 #ifndef CAR
 #define CAR
 #include <iostream>
+#include <fstream>
 #include <map>
 
 using namespace std;
@@ -22,6 +23,7 @@ class Car{
 	bool isPartExist(string key);
 
 	void show();
+	void save(string filename);
 }; 
 
 #endif //CAR
