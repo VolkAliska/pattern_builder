@@ -24,7 +24,7 @@ class KiaBuilder:public CarBuilder
     void buildModel(string model);
     void buildWheels(string wheels);
     void buildTrunk(string trunk);
-    void buildAdd(bool isAdd);
+    void buildAdd(int isAdd);
 };
 
 #endif //KIABUILDER

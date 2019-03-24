@@ -51,8 +51,8 @@ void VazBuilder::buildTrunk(string trunk){
     car->setPart("trunk", trunk);
 }
 
-void VazBuilder::buildAdd(bool isAdd){
-    if (isAdd)
+void VazBuilder::buildAdd(int isAdd){
+    if (isAdd==1)
         car->setPart("add", "extra trunk");
     else
         car->setPart("add", "none");

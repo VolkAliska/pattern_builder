@@ -41,6 +41,6 @@ void Car::show(){
     cout << "doors: " << parts["doors"] << endl;
     cout << "model: " << parts["model"] << endl;
     cout << "wheels: " << parts["wheels"] << endl;
-    cout << "trunk: " << parts["thrunk"] << endl;
+    cout << "trunk: " << parts["trunk"] << endl;
     cout << "additional: " << parts["add"] << endl;
 }

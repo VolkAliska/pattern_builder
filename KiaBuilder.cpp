@@ -49,8 +49,8 @@ void KiaBuilder::buildTrunk(string trunk){
     car->setPart("trunk", trunk);
 }
 
-void KiaBuilder::buildAdd(bool isAdd){
-    if (isAdd)
+void KiaBuilder::buildAdd(int isAdd){
+    if (isAdd == 1)
         car->setPart("add", "heated mirrors");
     else
         car->setPart("add", "none");

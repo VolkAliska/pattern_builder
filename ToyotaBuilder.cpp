@@ -49,8 +49,8 @@ void ToyotaBuilder::buildTrunk(string trunk){
     car->setPart("trunk", trunk);
 }
 
-void ToyotaBuilder::buildAdd(bool isAdd){
-    if (isAdd)
+void ToyotaBuilder::buildAdd(int isAdd){
+    if (isAdd==1)
         car->setPart("add", "automatic transmission");
     else
         car->setPart("add", "none");

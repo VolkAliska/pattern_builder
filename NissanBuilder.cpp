@@ -49,8 +49,8 @@ void NissanBuilder::buildTrunk(string trunk){
     car->setPart("trunk", trunk);
 }
 
-void NissanBuilder::buildAdd(bool isAdd){
-    if (isAdd)
+void NissanBuilder::buildAdd(int isAdd){
+    if (isAdd== 1)
         car->setPart("add", "heated seats");
     else
         car->setPart("add", "none");

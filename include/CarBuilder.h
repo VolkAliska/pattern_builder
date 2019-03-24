@@ -19,16 +19,16 @@ class CarBuilder
 
     Car* getCar();
 
-    virtual void buildColor() = 0;
-    virtual void buildEngine() = 0;
-    virtual void buildCapacity() = 0;
-    virtual void buildDimentions() = 0;
-    virtual void buildYear() = 0;
-    virtual void buildDoors() = 0;
-    virtual void buildModel() = 0;
-    virtual void buildWheels() = 0;
-    virtual void buildThrunk() = 0;
-    virtual void buildAdd() = 0;
+    virtual void buildColor(string color) = 0;
+    virtual void buildEngine(string type) = 0;
+    virtual void buildCapacity(string volume) = 0;
+    virtual void buildDimentions(string dimentions) = 0;
+    virtual void buildYear(string year) = 0;
+    virtual void buildDoors(string doors) = 0;
+    virtual void buildModel(string model) = 0;
+    virtual void buildWheels(string wheels) = 0;
+    virtual void buildTrunk(string trunk) = 0;
+    virtual void buildAdd(int isAdd) = 0;
 };
 
 #endif //CARBUILDER
