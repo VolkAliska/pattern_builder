@@ -14,8 +14,8 @@ class CarBuilder
     Car* car;
 
     public:
-    CarBuilder();
-    virtual ~CarBuilder();
+    CarBuilder(){};
+    virtual ~CarBuilder(){};
 
     Car* getCar();
 

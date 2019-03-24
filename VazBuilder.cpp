@@ -1,12 +1,14 @@
 /* VazBuilder.cpp */
 
 #include <iostream>
-#include "VazBuilder.h"
+#include "include/VazBuilder.h"
+#include "include/CarBuilder.h"
 
 using namespace std;
 
 VazBuilder::VazBuilder(){
-    car = new Car("Vaz");
+    string type = "Vaz";
+    car = new Car(type);
 }
 
 VazBuilder::~VazBuilder(){

@@ -27,4 +27,4 @@ class VazBuilder:public CarBuilder
     void buildAdd(bool isAdd);
 };
 
-#endif //CARBUILDER
+#endif //VAZBUILDER

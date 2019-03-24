@@ -1,7 +1,7 @@
 /*Car.cpp*/
 
 #include <iostream>
-#include "Car.h"
+#include "include/Car.h"
 
 using namespace std;
 
@@ -11,7 +11,7 @@ Car::Car(string type){
 
 // TO DO
 Car::~Car(){
-    
+    cout << "delete car" << endl;
 }
 
 bool Car::isPartExist(string key){
