@@ -69,7 +69,7 @@ int main(){
                 cout << "Enter car type" << endl;
                 cin >> type;
                 filename = type + ".txt";
-                file.exceptions ( std::ifstream::failbit | std::ifstream::badbit );
+                file.exceptions ( std::ifstream::badbit );
                 try {
                     file.open(filename);
                     while( !file.eof()){
