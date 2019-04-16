@@ -69,15 +69,26 @@ int main(){
                 cout << "Enter car type" << endl;
                 cin >> type;
                 filename = type + ".txt";
-                file.open(filename);
-                if(file.is_open()){
+                file.exceptions ( std::ifstream::failbit | std::ifstream::badbit );
+                try {
+                    file.open(filename);
                     while( !file.eof()){
                         getline(file, line);
                         cout << line << endl;
                     }
                 }
-                else
-                    cout << "Error opening file" << endl;
+                catch (const ifstream::failure& e) {
+                    cout << "Error reading file" << endl;
+                }
+                // file.open(filename);
+                // if(file.is_open()){
+                //     while( !file.eof()){
+                //         getline(file, line);
+                //         cout << line << endl;
+                //     }
+                // }
+                // else
+                //     cout << "Error opening file" << endl;
                 file.close();
                 break;
         
